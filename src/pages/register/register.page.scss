@@ -1,28 +1,38 @@
 
 .register{
-
     .card{
         background-color: #f9fafb !important;
-        height: 90vh;
+        height: 70vh;
         width: 50vh;
-        background-color: ;
+        display: block !important;
+        border: none;
+// background-color: white !important;
+// box-shadow: 0 4px 2px -2px #c5c7c5,
+// 0 0 2px #c5c7c5 !important;
+// box-shadow: 0 4px 2px -2px rgb(68, 68, 68) !important ;
+background-color: #f5f7f7 !important;
+box-shadow: 0 2px 2px -2px #707070,
+0px 0px 5px #d0d0d0,
+// -4px -4px 4px white,
+inset 7px 7px 9px white !important;
+border-radius: 5px;
         
-        .register-img{
-            img{
-                background-color: red !important;
-                width: 200px;
-                border-radius: 90px;
-                padding: 10px;
-                // position: absolute;
-                // top: -40px;
-                // z-index: 99;
-                // z-index: 999px;
-                // z-index: 999px;
-                // position: relative;
-                // top: 90px;
-                // overflow: hidden;
-    
-            }
+    }
+    .register-img{
+        height: auto;
+        display: block !important;
+        position: relative;
+        top: 80px;
+        z-index: 99;
+        img{
+            width: 150px;
+        height: auto;
+        
+
+            border-radius: 90px;
+            padding: 12px 10px 12px 10px;
+            background-color:white;
+            border: 4px solid #6573EB;
         }
     }
 }
