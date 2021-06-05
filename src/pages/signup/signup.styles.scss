@@ -1,21 +1,18 @@
-
 $red: #ef645b;
 $white: #fff;
 $blue:#6573EB;
 $green:#2ddaa5;
 
-.sign-up{
-    
-    .card{
-        width: 100vh;
-        display: block !important;
-        border: none;
-        background-color: #f5f7f7 !important;
-        box-shadow: 0 2px 2px -2px #707070,
-        0 0 5px #d0d0d0,
-        inset 7px 7px 9px white !important;
-        border-radius: 5px;
-
+    // .card{
+    //     width: 100vh;
+    //     display: block !important;
+    //     border: none;
+    //     background-color: #f5f7f7 !important;
+    //     box-shadow: 0 2px 2px -2px #707070,
+    //     0 0 5px #d0d0d0,
+    //     inset 7px 7px 9px white !important;
+    //     border-radius: 5px;
+    //     z-index: 1000;
         .signup-img{
             padding: 2px;
             height: auto;
@@ -24,7 +21,7 @@ $green:#2ddaa5;
             top:-55px;
             &:active img {
                 animation: spin 2s linear infinite;
-              }
+            }
             img{
                 width: 150px;
                 border-radius: 90px;
@@ -34,22 +31,22 @@ $green:#2ddaa5;
                 animation: spin 10s linear infinite;
             }
         }
-
         .form{
-            margin-top: -20px;
-            
+            margin-top: -20px; 
             p{
                 font-size: 13px;
                 color: $blue;
                 cursor: pointer;
             }
+            a{
+                text-decoration: none;
+            }
         }
-    }
-}
+    // }
   
 @keyframes spin { 
     100% { 
       transform: rotateZ(360deg);
     }
-  }
+}
   

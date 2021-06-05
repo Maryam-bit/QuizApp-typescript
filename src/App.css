@@ -1,8 +1,20 @@
 .app{
-  padding: 0px !important;
+  /* padding: 0px !important; */
   height: 100vh !important;
 }
 .svg{
   position: absolute;
   bottom: 0;
+}
+
+.card{
+  width: 100vh;
+  display: block !important;
+  border: none;
+  background-color: #f5f7f7 !important;
+  box-shadow: 0 2px 2px -2px #707070,
+  0 0 5px #d0d0d0,
+  inset 7px 7px 9px white !important;
+  border-radius: 5px;
+  z-index: 1000;
 }

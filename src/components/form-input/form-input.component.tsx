@@ -8,7 +8,7 @@ interface bioProps {
 const FormInput: React.FC<bioProps> = (props):JSX.Element => {
     return (
         <div className="form-input">
-             <input type={props.type} placeholder={props.placeholder} />
+            <input type={props.type} placeholder={props.placeholder} />
         </div>
     )
 }
