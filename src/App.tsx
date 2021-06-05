@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from './pages/register/register.page'
+import Home from './pages/signIn-and-signup.tsx/signin-and-signup'
 
 function App() {
   return (
