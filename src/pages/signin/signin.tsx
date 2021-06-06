@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 
 const Signin = () => {
   return (
-    <div className="signin">
+    <div className="signin text-center">
         <div className="signup-img text-center">
           <img src={img} />
         </div>

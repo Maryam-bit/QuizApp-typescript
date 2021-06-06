@@ -1,0 +1,18 @@
+$red: #ef645b;
+$white: #fff;
+$blue:#6573EB;
+$green:#2ddaa5;
+.questions-container{
+    .question{
+        color: rgb(82, 82, 82);
+    }
+    label{
+        background-color: #c1c7fc !important;
+        // background-color: #a9eed9 !important;
+        display: block !important;
+        margin: 1rem;
+        padding: 0.7rem;
+        border-radius: 30px;
+        font-size: 18px;
+    }
+}
