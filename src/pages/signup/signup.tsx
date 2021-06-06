@@ -17,7 +17,7 @@ const Signup = () => {
           <FormInput type="text" placeholder="Name" />
           <FormInput type="text" placeholder="Email" />
           <FormInput type="password" placeholder="Create password" />
-         <Button value="sign in" />
+         <Button value="sign up" />
           <Link to="/signin"><p>Already Signed Up? signin</p></Link>
         </div>
       {/* // </div>
