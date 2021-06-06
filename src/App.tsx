@@ -4,18 +4,20 @@ import './App.css';
 import Signup from './pages/signup/signup'
 import Signin from './pages/signin/signin'
 import QuizCategory from './pages/quizCategory/quizCategory'
+import Questions from './pages/questions/questions'
 import { Route, route, Switch, Redirect } from "react-router-dom";
 
 function App() {
   return (
     <div className="container-fluid app">
-      <div className="app-child h-100 d-flex text-center">
+      <div className="app-child h-100 d-flex">
 
-      <div className="card mx-auto my-auto text-center">
+      <div className="card mx-auto my-auto">
         <Switch>
           <Route exact path="/" component={Signup} />
           <Route path="/signin" component={Signin} />
           <Route path="/category" component={QuizCategory} />
+          <Route path="/questions" component={Questions} />
         </Switch>
       
       </div>

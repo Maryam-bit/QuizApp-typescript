@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 
 const Signin = () => {
   return (
-    <>
+    <div className="signin">
         <div className="signup-img text-center">
           <img src={img} />
         </div>
@@ -17,8 +17,7 @@ const Signin = () => {
         <Link to="/category"> <Button value="sign in"/></Link>
           <Link to="/"><p>Don't have an account? signup</p></Link>
         </div>
-    
-    </>
+        </div>
   )
 }
 

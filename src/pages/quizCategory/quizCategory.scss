@@ -3,33 +3,85 @@ $white: #fff;
 $blue:#6573EB;
 $green:#2ddaa5;
 $yellow: #ffc054;
-
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 .quiz-category{
+    a{
+        // display: block !important;
+        text-decoration: none !important;
+        color: rgb(89, 88, 88);
+    }
+    h2{
+        margin-bottom: 1rem !important;
+        margin-top: -4rem !important;
+        font-size: 40px;
+        // text-transform: uppercase;
+        color: $blue;
+        color: rgb(89, 88, 88);
+        font-family: 'Do Hyeon', sans-serif;
+    }
     .text{
         font-size: 17px;
         color: rgb(89, 88, 88);
         font-weight: 600;
-        margin-top: -20px !important;
         margin-bottom: 30px !important;
     }
-    .category{
-        border-radius: 90px;
-        height: 100%;
-        padding: 41px 0 41px 0;
-        p{
-            color: rgb(253, 253, 253);
-        }   
-    }
-    .category1{
-        // border: 10px solid $blue;
-        background-color: $yellow
-    }
-    .category2{
-        background-color: $green;
+    // .category{
+    //     border-radius: 90px;
+    //     height: 100%;
+    //     padding: 41px 0 41px 0;
+    //     p{
+    //         color: rgb(253, 253, 253);
+    //     }   
+    // }
+    // .category1{
+    //     background-color: $yellow
+    // }
+    // .category2{
+    //     background-color: $green;
 
-    }
-    .category3{
-        background-color: $red;
+    // }
+    // .category3{
+    //     background-color: $red;
 
+    // }
+.categoryy{
+    color: rgb(89, 88, 88);
+    font-weight: 500;
+    p{
+        margin-top:8px;
+    }
+}
+    .category-1{
+        img{
+            width: 100px;
+            border-radius: 90px;
+            border: 6px solid $yellow;
+            &:hover{
+                transform: scale(1.2);
+                box-shadow: 2px 2px 7px grey;
+            }
+        }}
+    .category-2{
+        img{
+            width: 100px;
+            border-radius: 90px;
+            border: 6px solid $green;
+            // transition: 1s;
+            &:hover{
+                transform: scale(1.2);
+                box-shadow: 2px 2px 7px grey;
+            }
+        }
+    }
+    .category-3{
+        img{
+            width: 100px;
+            border-radius: 90px;
+            border: 6px solid $red;
+            &:hover{
+                transform: scale(1.2);
+                box-shadow: 2px 2px 7px grey;
+            }
+        }
     }
 }

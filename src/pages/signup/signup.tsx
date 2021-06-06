@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 
 const Signup = () => {
   return (
-    <>
+    <div className="signup text-center">
     {/* // <div className="sign-up h-100 d-flex text-center">
       // <div className="card mx-auto my-auto text-center">   row justify-content-center align-self-center  */}
         <div className="signup-img text-center">
@@ -22,7 +22,8 @@ const Signup = () => {
         </div>
       {/* // </div>
     // </div> */}
-    </>
+    </div>
+
   )
 }
 
