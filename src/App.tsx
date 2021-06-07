@@ -5,12 +5,13 @@ import Signup from './pages/signup/signup'
 import Signin from './pages/signin/signin'
 import QuizCategory from './pages/quizCategory/quizCategory'
 import Questions from './pages/questions/questions'
+import Result from './pages/result/result'
 import { Route, route, Switch, Redirect } from "react-router-dom";
 
 function App() {
   return (
     <div className="container-fluid app">
-      <div className="app-child h-100 d-flex">
+      <div className="app-child h-100 d-flex ">
 
       <div className="card mx-auto my-auto">
         <Switch>
@@ -18,6 +19,7 @@ function App() {
           <Route path="/signin" component={Signin} />
           <Route path="/category" component={QuizCategory} />
           <Route path="/questions" component={Questions} />
+          <Route path="/result" component={Result} />
         </Switch>
       
       </div>

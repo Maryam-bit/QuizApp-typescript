@@ -1,0 +1,27 @@
+$red: #ef645b;
+$white: #fff;
+$blue:#6573EB;
+$green:#2ddaa5;
+$yellow: #ffc054;
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.result{
+    .status{
+        // width: 200px;
+        margin-top: -3rem;
+    }
+    h2{
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 35px;
+        color: $red;
+    }
+    h1{
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 35px;
+        color: $green;
+    }
+    p{
+        font-weight: 600;
+        font-size: 18px;
+    }
+}

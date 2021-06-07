@@ -1,6 +1,7 @@
 .app{
   padding: 0px !important;
   height: 100vh !important;
+  /* overflow:scroll !important ; */
 }
 .svg{
   position: absolute;
@@ -8,7 +9,8 @@
 }
 
 .card{
-  width: 100vh;
+  /* margin-top: 16rem !important; */
+  width: 80%;
   display: block !important;
   border: none;
   background-color: #f5f7f7 !important;
