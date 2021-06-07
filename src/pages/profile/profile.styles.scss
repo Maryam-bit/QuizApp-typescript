@@ -16,4 +16,19 @@ $yellow: #ffc054;
     h1{
         color: $green;
     }
+    .progress-bar{
+        background-color: #f5f7f7 !important;
+    }
+    .userData{
+        img{
+            width: 120px;
+            border-radius: 10px;
+            margin-bottom: 10px !important;
+        }
+        p{
+            font-size: 17px;
+            font-weight: 600;
+            margin: 0 !important;
+        }
+    }
 }
