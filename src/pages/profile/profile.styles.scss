@@ -1,0 +1,19 @@
+$red: #ef645b;
+$white: #fff;
+$blue:#6573EB;
+$green:#2ddaa5;
+$yellow: #ffc054;
+.profile{
+    .name{
+        margin-top: -3.9rem !important;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    span{
+        font-size: 17px;
+        font-weight: 600;
+    }
+    h1{
+        color: $green;
+    }
+}

@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Signup from './pages/signup/signup'
+// import Signup from './pages/signup/signup'
 import Signin from './pages/signin/signin'
 import QuizCategory from './pages/quizCategory/quizCategory'
 import Questions from './pages/questions/questions'
 import Result from './pages/result/result'
+import Profile from './pages/profile/profile'
 import { Route, route, Switch, Redirect } from "react-router-dom";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
 
       <div className="card mx-auto my-auto">
         <Switch>
-          <Route exact path="/" component={Signup} />
+          {/* <Route exact path="/" component={Signup} /> */}
+          <Route exact path="/" component={Profile} />
           <Route path="/signin" component={Signin} />
           <Route path="/category" component={QuizCategory} />
           <Route path="/questions" component={Questions} />
