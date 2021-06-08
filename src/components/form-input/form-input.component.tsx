@@ -5,6 +5,7 @@ interface bioProps {
     type:string,
     placeholder:string,
 }
+
 const FormInput: React.FC<bioProps> = (props):JSX.Element => {
     return (
         <div className="form-input">

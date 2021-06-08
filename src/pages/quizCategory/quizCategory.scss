@@ -6,7 +6,6 @@ $yellow: #ffc054;
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 .quiz-category{
     a{
-        // display: block !important;
         text-decoration: none !important;
         color: rgb(89, 88, 88);
     }
@@ -14,7 +13,6 @@ $yellow: #ffc054;
         margin-bottom: 1rem !important;
         margin-top: -4rem !important;
         font-size: 40px;
-        // text-transform: uppercase;
         color: $blue;
         color: rgb(89, 88, 88);
         font-family: 'Do Hyeon', sans-serif;

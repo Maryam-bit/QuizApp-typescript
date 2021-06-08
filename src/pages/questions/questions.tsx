@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import './questions.styles.scss'
 import Button from "../../components/button/button.component"
 import question from "../../img/question.png"
+
 const Questions = () => {
     const history = useHistory();
     const handleSubmit = (e) => {
