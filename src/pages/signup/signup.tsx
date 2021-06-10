@@ -6,11 +6,13 @@ import Button from "../../components/button/button.component"
 import { Link } from "react-router-dom"
 import firebase from '../../config/firebase'
 import { nanoid } from 'nanoid'
+import { useHistory } from "react-router-dom"
 
 const Signup = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const history = useHistory()
 
   const signup = async (e) => {
     e.preventDefault()
@@ -20,6 +22,7 @@ const Signup = () => {
         email,
         name,
       })
+      history.replace('/signin')
       alert("ypu are done")
     }
     catch (e) {
