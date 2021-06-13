@@ -12,11 +12,11 @@ const Signin = () => {
   const [password, setPassword] = useState('')
   const history = useHistory()
   console.log(email)
-  const signin = async(e) => {
+  const signin = async (e) => {
     e.preventDefault()
     try {
       console.log('afef')
-     await firebase.auth().signInWithEmailAndPassword(email, password)
+      await firebase.auth().signInWithEmailAndPassword(email, password)
       history.replace('/category')
       alert("ypu are done")
     }
@@ -24,6 +24,7 @@ const Signin = () => {
       alert(e.message)
     }
   }
+  
   return (
     <div className="signin text-center">
       <div className="signup-img text-center">

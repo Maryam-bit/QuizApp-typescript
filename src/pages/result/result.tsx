@@ -2,6 +2,7 @@ import React from 'react'
 import result from '../../img/result.png'
 import pass from '../../img/pass.png'
 import './result.styles.scss'
+
 const Result = () => {
     return (
         <div className="result text-center">
@@ -16,4 +17,5 @@ const Result = () => {
         </div>
     )
 }
+
 export default Result

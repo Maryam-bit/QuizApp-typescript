@@ -40,7 +40,6 @@ const Profile = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div className="col-md-4 userData text-start">
                     <img src={avatar} />
