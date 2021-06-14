@@ -1,16 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-import Signup from './pages/signup/signup'
-import Signin from './pages/signin/signin'
-import QuizCategory from './pages/quizCategory/quizCategory'
-import Questions from './pages/questions/questions'
-import Result from './pages/result/result'
-import Profile from './pages/profile/profile'
 import Tab from './components/tab/tab'
-import { Route, Switch } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import { QuizServices } from './services/quizServices';
 import {questionTypes, quiz} from './types/quizTypes'
+import AppRouter from './config/route'
 
 function App() {
   const [quiz, setquiz] = useState<quiz[]>([])
@@ -29,14 +23,7 @@ function App() {
     <div className="container-fluid app">
       <div className="app-child h-100 d-flex ">
         <div className="card mx-auto my-auto">
-          <Switch>
-            <Route exact path="/" component={Signup} />
-            <Route exact path="/profile" component={Profile} />
-            <Route path="/signin" component={Signin} />
-            <Route path="/category" component={QuizCategory} />
-            <Route path="/questions" component={Questions} />
-            <Route path="/result" component={Result} />
-          </Switch>
+          <AppRouter/>
         </div>
         {path == '/' ? null : path == '/signin' ? null : <Tab />}
       </div>
