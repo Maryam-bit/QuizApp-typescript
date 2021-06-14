@@ -5,7 +5,6 @@ import QuizCategory from '../pages/quizCategory/quizCategory'
 import Questions from '../pages/questions/questions'
 import Result from '../pages/result/result'
 import Profile from '../pages/profile/profile'
-// import Tab from '../components/tab/tab'
 import { Route, Switch } from "react-router-dom";
 
 const AppRouter = () => {

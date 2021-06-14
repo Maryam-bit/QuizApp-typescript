@@ -3,7 +3,7 @@ import img from '../../img/category.png'
 import computer from '../../img/compoter.png'
 import geography from '../../img/geography.jpg'
 import math from '../../img/math.png'
-import Button from '../../components/button/button.component'
+// import Button from '../../components/button/button.component'
 import { Link } from 'react-router-dom'
 import './quizCategory.scss'
 
@@ -11,7 +11,7 @@ const QuizCategory = () => {
     return (
         <div className="quiz-category container pb-4 text-center">
             <div className="signup-img text-center">
-                <img src={img} />
+                <img src={img} alt='' />
             </div>
             <h2>Welcome to quizoO</h2>
             <p className='text'>Choose one from the categories below and see how many questions you can answer correctly out of 10 questions!</p>

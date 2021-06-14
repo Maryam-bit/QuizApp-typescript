@@ -17,7 +17,7 @@ const Signup = () => {
   const signup = async (e) => {
     e.preventDefault()
     try {
-      const user = await firebase.auth().createUserWithEmailAndPassword(email, password)
+      await firebase.auth().createUserWithEmailAndPassword(email, password)
       firebase.firestore().collection('users').doc(nanoid()).set({
         email,
         name,
@@ -35,7 +35,7 @@ const Signup = () => {
       {/* // <div className="sign-up h-100 d-flex text-center">
       // <div className="card mx-auto my-auto text-center">   row justify-content-center align-self-center  */}
       <div className="signup-img text-center">
-        <img src={img} />
+        <img src={img} alt='' />
       </div>
       <form onSubmit={signup} className="form">
         {/* <FormInput type="text" placeholder="Name"/> */}

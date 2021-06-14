@@ -7,7 +7,7 @@ interface bioProps{
 const Button:React.FC<bioProps> = (props):JSX.Element => {
     return (
         <div className="button">
-          <button className="signup btn btn-white btn-animate mt-3">{props.value}</button>
+          <button type='submit' className="signup btn btn-white btn-animate mt-3">{props.value}</button>
         </div>
     )
 }

@@ -8,7 +8,7 @@ const Profile = () => {
     return (
         <div className="profile container-fluid text-center pb-4">
             <div className="signup-img text-center">
-                <img src={profile} />
+                <img src={profile} alt="" />
             </div>
             <p className='name'>Maryam Noor</p>
             <div className="row">
@@ -42,7 +42,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className="col-md-4 userData text-start">
-                    <img src={avatar} />
+                    <img src={avatar} alt='' />
                     <p className='userName'>Maryam Noor</p>
                     <p className="emai">Maryam@gmail.com</p>
                 </div>

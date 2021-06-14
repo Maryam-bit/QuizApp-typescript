@@ -24,11 +24,11 @@ const Signin = () => {
       alert(e.message)
     }
   }
-  
+
   return (
     <div className="signin text-center">
       <div className="signup-img text-center">
-        <img src={img} />
+        <img src={img} alt='' />
       </div>
       <form onSubmit={signin} className="form">
         {/* <FormInput type="text" placeholder="Email" />
