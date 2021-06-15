@@ -12,10 +12,12 @@ function App() {
   const [score, setScore] = useState(0)
   const location = useLocation();
   let path = location.pathname
-
+  let geography = 22;
+  let computer = 18;
+  let mathemetics = 19;
   useEffect(() => {
     const fetchData = async () => {
-      const questions: questionTypes[] = await QuizServices(10, 18, 'easy')
+      const questions: questionTypes[] = await QuizServices(10, computer, 'easy')
       setquiz(questions)
       console.log(questions)
     }
