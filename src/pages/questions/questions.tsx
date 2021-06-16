@@ -23,9 +23,15 @@ const Questions = () => {
         e.preventDefault()
         e.target.reset();
         const correctAnswer = quiz[currentStep].answer;
-
-        if (selectAnswer == correctAnswer) 
+console.log('right ans', correctAnswer , "you answer", selectAnswer)
+        if (selectAnswer == correctAnswer) {
             setScore(++score)
+console.log('correct');
+        }
+        else{
+            console.log('false')
+        }
+
 
         if (currentStep !== quiz.length - 1)
             setCurrentStep(++currentStep)
