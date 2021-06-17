@@ -6,12 +6,15 @@ import { QuizServices } from './services/quizServices';
 import { questionTypes } from './types/quizTypes'
 import AppRouter from './config/route'
 import { QuestionContext, Score, Quizcategory } from './config/context'
+import firebase from './config/firebase'
 
 function App() {
   const [quiz, setquiz] = useState<questionTypes[]>([])
   const [score, setScore] = useState(0)
   const location = useLocation();
   const [category, setcategory] = useState(0)
+  const [isloggedin, setIsloggedin] = useState(false)
+
   let path = location.pathname
   let geography = 22;
   let computer = 18;
@@ -24,8 +27,15 @@ function App() {
       console.log(questions)
     }
     fetchData()
+    listenAuthentication();
   }, [])
+ 
 
+  const listenAuthentication = () => {
+    firebase.auth().onAuthStateChanged(function (user) {
+      setIsloggedin(user ? true : false);
+    });
+  };
   return (
     <QuestionContext.Provider value={quiz}>
       <Score.Provider value={[score, setScore]}>
@@ -33,7 +43,7 @@ function App() {
           <div className="container-fluid app">
             <div className="app-child h-100 d-flex ">
               <div className="card mx-auto my-auto">
-                <AppRouter />
+                <AppRouter isloggedin={isloggedin}/>
               </div>
               {path === '/' ? null : path === '/signin' ? null : <Tab />}
             </div>
