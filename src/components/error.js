@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './error.scss'
 const Error = () => {
     return (
         <div>
@@ -11,7 +11,7 @@ const Error = () => {
 const Loading = () => {
     return (
         <div>
-            <h1>Loading</h1>
+            <div class="loader">Loading...</div>
         </div>
     )
 }
