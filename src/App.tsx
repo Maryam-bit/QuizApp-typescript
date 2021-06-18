@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import { QuizServices } from './services/quizServices';
 import { questionTypes } from './types/quizTypes'
 import AppRouter from './config/route'
-import { QuestionContext, Score, Quizcategory } from './config/context'
+import { QuestionContext, Score, Quizcategory, Loading } from './config/context'
 import firebase from './config/firebase'
 
 function App() {
@@ -14,12 +14,17 @@ function App() {
   const location = useLocation();
   const [category, setcategory] = useState(0)
   const [isloggedin, setIsloggedin] = useState(false)
+  const [isLoading, setLoading] = useState(true);
+
+  
+
 
   let path = location.pathname
   let geography = 22;
   let computer = 18;
   let mathemetics = 19;
   console.log("category",category)
+
   useEffect(() => {
     const fetchData = async () => {
       const questions: questionTypes[] = await QuizServices(10, category, 'easy')
@@ -29,21 +34,29 @@ function App() {
     fetchData()
     listenAuthentication();
   }, [])
+  // if (quiz.length){
+  //   setLoading(false)
+  //   return "loading........."
+  // }
+
  
 
   const listenAuthentication = () => {
     firebase.auth().onAuthStateChanged(function (user) {
+      setLoading(false)
       setIsloggedin(user ? true : false);
     });
   };
+
   return (
     <QuestionContext.Provider value={quiz}>
       <Score.Provider value={[score, setScore]}>
         <Quizcategory.Provider value={[category, setcategory]}>
+          <Loading.Provider value={[isLoading, setLoading]}>
           <div className="container-fluid app">
             <div className="app-child h-100 d-flex ">
               <div className="card mx-auto my-auto">
-                <AppRouter isloggedin={isloggedin}/>
+                <AppRouter isloggedin={isloggedin} isLoading={isLoading}/>
               </div>
               {path === '/' ? null : path === '/signin' ? null : <Tab />}
             </div>
@@ -51,6 +64,7 @@ function App() {
         <path fill="#00cba9" fill-opacity="1" d="M0,192L80,202.7C160,213,320,235,480,208C640,181,800,107,960,64C1120,21,1280,11,1360,5.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
       </svg> */}
           </div>
+          </Loading.Provider>
         </Quizcategory.Provider>
       </Score.Provider>
     </QuestionContext.Provider>

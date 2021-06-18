@@ -8,7 +8,11 @@ import Profile from '../pages/profile/profile'
 import { Route, Switch, Redirect } from "react-router-dom";
 // const currentPath = window.location.pathname.length === 1 ? '/' : window.location.pathname
 
-const AppRouter = ({ isloggedin }) => {
+import {Error, Loading} from '../components/error'
+
+const AppRouter = ({ isloggedin, isLoading }) => {
+
+if(isLoading) return <Loading/>
     return (
         <div>
             <Switch>
@@ -23,11 +27,11 @@ const AppRouter = ({ isloggedin }) => {
                     {/* {isloggedin ? <Redirect to='/cactegory' /> : <Signin />} */}
                 </Route>
 
-                <Route path="/questions">
+                <Route path="/questions" component={Questions}>
                     {AuthChecker(isloggedin, <Questions />)}
                 </Route>
 
-                <Route path="/result">
+                <Route path="/result" component={Result}>
                     {AuthChecker(isloggedin, <Result />)}
                 </Route>
                 {/* <Route exact path="/profile" component={Profile} /> */}
@@ -40,6 +44,6 @@ const AppRouter = ({ isloggedin }) => {
 }
 
 function AuthChecker(isloggedin, component) {
-    return isloggedin ? component : "please login fisrt"
+    return isloggedin ? component : <Error/>;
 }
 export default AppRouter;

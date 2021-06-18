@@ -4,6 +4,8 @@ import question from "../../img/question.png"
 import { QuestionContext, Score } from '../../config/context'
 import { useHistory } from "react-router";
 import './questions.styles.scss'
+import {Error, Loading} from '../../components/error'
+
 
 
 const Questions = () => {
@@ -11,10 +13,14 @@ const Questions = () => {
     let [score, setScore] = useContext(Score)
     let [currentStep, setCurrentStep] = useState(0)
     let [selectAnswer, setSelectAnswer] = useState('')
+    // const [isLoading, setLoading] = useContext(Loading);
+
     const history = useHistory();
 
-    if (!quiz.length)
-        return "loading...."
+    if (!quiz.length){
+        return <Loading/>
+    }
+
 
     let questions = quiz[currentStep].question;
     let options = quiz[currentStep].options;
@@ -23,12 +29,12 @@ const Questions = () => {
         e.preventDefault()
         e.target.reset();
         const correctAnswer = quiz[currentStep].answer;
-console.log('right ans', correctAnswer , "you answer", selectAnswer)
+        console.log('right ans', correctAnswer, "you answer", selectAnswer)
         if (selectAnswer == correctAnswer) {
             setScore(++score)
-console.log('correct');
+            console.log('correct');
         }
-        else{
+        else {
             console.log('false')
         }
 
