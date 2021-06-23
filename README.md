@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://scontent.fisb7-1.fna.fbcdn.net/v/t1.15752-9/197295281_1853025904878275_2242624610100256764_n.png?_nc_cat=104&ccb=1-3&_nc_sid=ae9488&_nc_ohc=G-TDvJ2lc-gAX9kR7pM&_nc_ht=scontent.fisb7-1.fna&oh=efc7ff6f0b53c352d3cef82f81246c70&oe=60D8C3B6" alt="Flowers in Chania" width="200">
+  <img src="https://scontent.fisb7-1.fna.fbcdn.net/v/t1.15752-9/203882447_2965272980419728_9212290146912853196_n.png?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=-8p-3Bgu8oUAX-c73EO&_nc_ht=scontent.fisb7-1.fna&oh=8fbde65a05cb3f86af27a2186cfa22be&oe=60D87D88" alt="Flowers in Chania" width="200">
 
   <h1 align="center">EXPENSE TRACKER APP IN CONTEXT API</h1>
 </div>
