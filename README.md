@@ -3,9 +3,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://scontent.fisb7-1.fna.fbcdn.net/v/t1.15752-9/203882447_2965272980419728_9212290146912853196_n.png?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=-8p-3Bgu8oUAX-c73EO&_nc_ht=scontent.fisb7-1.fna&oh=8fbde65a05cb3f86af27a2186cfa22be&oe=60D87D88" alt="Flowers in Chania" width="200">
+  <img src="https://scontent.fisb7-1.fna.fbcdn.net/v/t1.15752-9/203882447_2965272980419728_9212290146912853196_n.png?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=-8p-3Bgu8oUAX-c73EO&_nc_ht=scontent.fisb7-1.fna&oh=8fbde65a05cb3f86af27a2186cfa22be&oe=60D87D88" alt="Flowers in Chania" width="150">
 
-  <h1 align="center">QUIZoO APP</h1>
+  <h1 align="center", fontweight="900">QUIZoO APP</h1>
 </div>
 
 
