@@ -1,0 +1,29 @@
+$red: #ef645b;
+$white: #fff;
+$blue:#6573EB;
+$green:#2ddaa5;
+
+.signup-img{
+    padding: 2px;
+    height: auto;
+    display: block !important;
+    position: relative;
+    top:-65px;
+    &:active img {
+        animation: spin 2s linear infinite;
+    }
+    img{
+        width: 150px;
+        border-radius: 90px;
+        padding: 12px 10px 12px 10px;
+        background-color:white !important;
+        border: 4px dashed $green;
+        animation: spin 10s linear infinite;
+    }
+    
+}
+@keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg);
+}
+}
