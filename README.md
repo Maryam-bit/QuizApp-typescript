@@ -13,7 +13,8 @@
 ## ABOUT THE PROJECT
 This Project is Made for practicing purpose.
 
-![image](https://user-images.githubusercontent.com/56764144/121787304-cac4b780-cbde-11eb-90f6-dfc41821335a.png)
+
+![quizapp](https://user-images.githubusercontent.com/56764144/123146561-78558780-d477-11eb-8680-35d45ad4c217.PNG)
 
  
  
