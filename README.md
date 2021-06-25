@@ -18,7 +18,7 @@ This Project is Made for practicing purpose.
 
  
  
-## VIDEOo
+## VIDEO
 https://youtu.be/HllBd4jKCAg
 
 
