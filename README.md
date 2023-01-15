@@ -17,11 +17,6 @@ This Project is Made for practicing purpose.
 ![quizapp](https://user-images.githubusercontent.com/56764144/123146561-78558780-d477-11eb-8680-35d45ad4c217.PNG)
 
  
- 
-## VIDEO
-https://youtu.be/HllBd4jKCAg
-
-
 ## BUILD WITH
 
 Following are the technologies that I used in this project(shoe store)
